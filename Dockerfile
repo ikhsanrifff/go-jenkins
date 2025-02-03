@@ -5,7 +5,7 @@ FROM golang:1.23.4
 WORKDIR /app
 
 # Salin file go.mod dan go.sum
-COPY go.mod go.sum ./
+COPY go.mod ./
 
 # Download dependency
 RUN go mod download
