@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # Build app
-RUN go build -o go-jenkins
+RUN go build -o /go-jenkins
 
 # Command untuk run aplikasi
 CMD ["./go-jenkins"]
